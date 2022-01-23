@@ -469,7 +469,8 @@ footer {
     }
 
     .about__image img {
-        height: 80%;
+        /*height: 80%;*/
+        width: 80%;
     }
 
     .contact__img {
