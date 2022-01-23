@@ -88,30 +88,16 @@ a {
     overflow: hidden;
 }
 
-/*.hero__bg {*/
-/*    position: relative;*/
-/*}*/
-
-/*.hero__bg__loop {*/
-/*    !*max-height: 200%;*!*/
-/*    max-width: 200%;*/
-/*    object-fit: contain;*/
-/*    position: fixed;*/
-/*    z-index:-2;*/
-/*    transform: translateZ(0);*/
-/*    -webkit-transform: translateZ(0);*/
-/*    filter: brightness(0.5);*/
-/*}*/
-
 .hero__bg {
+    position: relative;
 }
 
 .hero__bg__loop {
-    width: 200%;
-    height: 100%;
-    object-fit: cover;
-    position:relative;
-    z-index:0;
+    /*max-height: 200%;*/
+    max-width: 200%;
+    object-fit: contain;
+    position: fixed;
+    z-index:-2;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
     filter: brightness(0.5);
