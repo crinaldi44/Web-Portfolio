@@ -159,11 +159,12 @@ p.hero__text__subheader {
 /* ASSIGNMENTS */
 
 #assignments {
-    background-color: white;
+    background-color: var(--primary-dark);
     width: 100%;
     min-height: 750px;
     color: var(--primary-darkblue);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 3%;
@@ -196,6 +197,7 @@ p.hero__text__subheader {
     margin-top: 10px;
     padding: 0 30px 0 30px;
     line-height: 20px;
+    color: white;
 }
 
 .assignments__cards {
@@ -207,7 +209,6 @@ p.hero__text__subheader {
 }
 
 .assignments__card {
-    border: solid 2px #EFEFEF;
     min-width: 300px;
     min-height: 300px;
     transition: ease-in-out 300ms;
@@ -218,6 +219,8 @@ p.hero__text__subheader {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    background-color: white;
+    border-radius: 7px;
 }
 
 .assignments__card:hover {
@@ -227,14 +230,23 @@ p.hero__text__subheader {
 }
 
 .assignments__card__text {
-    color: var(--offgrey);
+    color: var(--primary-dark);
     max-width: 250px;
     margin-left: auto;
     margin-right: auto;
+    flex: 3;
+}
+
+.assignments__card i {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .assignments__card:hover button {
-    background-color: var(--accent-color);
+    background-color: darkorange;
 }
 
 .assignments__card button {
@@ -248,8 +260,7 @@ p.hero__text__subheader {
     width: 36px;
     border-radius: 30px;
     height: 36px;
-    background-color: #263052;
-    color: var(--accent-color);
+    background-color: var(--accent-color);
     cursor: pointer;
     transition: ease-in-out 300ms;
 }
@@ -267,7 +278,7 @@ p.hero__text__subheader {
 #about {
     width: 100%;
     min-height: 750px;
-    background-color: var(--primary-dark);
+    background-color: white;
     display: flex;
     justify-content: center;
 }
@@ -287,11 +298,12 @@ p.hero__text__subheader {
 h1.about__text__header {
     max-width: 350px;
     padding-bottom: 5px;
+    color: var(--primary-dark);
 }
 
 p.about__text__p {
     max-width: 350px;
-    color: #DEDEDE;
+    color: var(--primary-dark);
     margin: 10px 0 40px 0;
     letter-spacing: 1px;
     line-height: 20px;
