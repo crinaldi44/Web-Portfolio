@@ -136,24 +136,26 @@ p.hero__text__subheader {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    background: linear-gradient(to right, var(--accent-color) 50%, white 50%);
-    background-size: 200% 100%;
-    background-position:left bottom;
+    background: linear-gradient(to right, white 50%, var(--accent-color) 50%);
+    background-size: 210% 100%;
+    background-position:right bottom;
 }
 
 .button.dark {
-    background: var(--primary-dark);
+    background: linear-gradient(to right, whitesmoke 50%, var(--primary-dark) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
     color: var(--offwhite);
 }
 
-.button.dark:hover {
-    background: var(--accent-color);
-}
+/*.button.dark:hover {*/
+/*    background: var(--accent-color);*/
+/*}*/
 
 .button:hover {
     color: black;
     transition: ease-in-out 300ms;
-    background-position: right bottom;
+    background-position: left bottom;
 }
 
 /* ASSIGNMENTS */
