@@ -385,6 +385,7 @@ footer {
     min-height: 250px;
     background-color: var(--primary-dark);
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .footer__items__container {
@@ -416,11 +417,12 @@ footer {
 }
 
 .footer__watermark {
-    color: var(--offwhite);
+    color: #DEDEDE;
     font-size: 12px;
-    margin: 100px auto 10px auto;
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .social__container {
