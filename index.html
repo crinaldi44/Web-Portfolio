@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chris Rinaldi</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- TOP SECTION -->
+        <section id="hero">
+            <div class="hero__bg">
+                <video class="hero__bg__loop" src="./assets/background-loop.mp4" autoplay loop muted/>
+            </div>
+            <nav class="navigation">
+                <img  class="logo" src="./assets/images/logo.png" alt="logo"/>
+                <ul class="nav__menu">
+                    <li class="nav__item"><a href="#assignments">Projects</a></li>
+                    <li class="nav__item"><a href="#about">About</a></li>
+                    <li class="nav__item"><a href="#contact">Contact</a></li>
+                    <li class="nav__item"><a target="_blank" href="https://github.com/crinaldi44"><i style="font-size: 20px" class="fab fa-github"></i></a></li>
+                    <li class="nav__item"><a target="_blank" href="https://github.com/crinaldi44"><i style="font-size: 20px" class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+            <div class="hero__text">
+                <p style="font-size: 16px; margin-bottom: 5px; color: #4CA76B;"><strong>CHRIS RINALDI</strong></p>
+                <h1 id="header1" class="hero__text__header"></h1>
+                <h1 id="header2" class="hero__text__header"></h1>
+                <p class="hero__text__subheader">Welcome to my personal portfolio! Below you will find samples of my work, a bit about myself as well as my resume and contact!</p>
+                <a href="#assignments"><button class="button">PROJECTS</button></a>
+            </div>
+        </section>
+
+        <!-- ASSIGNMENTS SECTION -->
+        <section id="assignments">
+            <div>
+                <div class="assignments__description">
+                    <div>
+                        <img class="assignments__description__icon" src="./assets/images/crown.png"/>
+                    </div>
+                    <p class="assignments__description__action"><strong>PROJECTS</strong></p>
+                    <h1>A few samples of my work</h1>
+                    <p class="assignments__description__hint">Each project can be viewed below. Clicking on the attached link will route you directly to the corresponding GitHub project.</p>
+                </div>
+                <div class="assignments__cards">
+                    <div class="assignments__card">
+                        <i class="fab fa-js-square" style="color: #263052; transition: ease-in-out 300ms; display: inline; font-size: 60px;"></i>
+                        <h4>JobApp</h4>
+                        <p class="assignments__card__text">A progressive-web-app written in React.js on the frontend using Node, Express, and PostgreSQL with Sequelize ORM. Allows a user to track, manage, and update job applications.</p>
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="assignments__card">
+                        <i class="fab fa-html5" style="color: #263052; transition: ease-in-out 300ms; width: 100%; font-size: 60px;"></i>
+                        <h4>CMR Entertainment</h4>
+                        <p class="assignments__card__text">A user-facing website designed for a small business in React.js. This project overhauled a previously-unsecure FTP-based legacy system and enabled access to thousands more mobile users.</p>
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="assignments__card">
+                        <i class="fas fa-server" style="color: #263052; transition: ease-in-out 300ms; width: 100%; font-size: 60px;"></i>
+                        <h4>GradeCalc</h4>
+                        <p class="assignments__card__text">A mobile solution developed in React Native. Used to reduce over 30 hours of manual grading time for my professor and fellow students.</p>
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="about__container">
+                <div class="about__text">
+                    <p style="font-size: 16px; margin-bottom: 5px; color: #4CA76B; letter-spacing: 3px"><strong>ABOUT ME</strong></p>
+                    <h1 class="about__text__header">From the fitness industry to tech</h1>
+                    <p class="about__text__p">I currently attend Rowan University in my senior year with an expected graduation of May 2023. I knew from a young age I'd want to solve problems thru technology.</p>
+                    <a href="./assets/Chris_Rinaldi_Resume.pdf"><button class="button">VIEW RESUME</button></a>
+                </div>
+                <div class="about__image">
+                    <img src="assets/images/about.png"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div class="about__container">
+                <img class="contact__img" src="assets/images/contact.png"/>
+                <div>
+                    <div class="contact__text">
+                        <p style="font-size: 16px; margin-bottom: 5px; color: #4CA76B; letter-spacing: 2px"><strong>CONTACT ME</strong></p>
+                        <h1 class="contact__header">Get in touch with rapid response</h1>
+                        <p class="contact__text">Please feel free to use the form below to get in touch! I generally will respond to any requests for more information or elaboration of work within 24 hours.</p>
+                    </div>
+                    <form id="contact__form" method="post">
+                        <details style="margin-top: 15px">
+                            <summary><strong>Contact Form</strong></summary>
+                            <input list="types" placeholder="I am a..." required/>
+                            <datalist id="types">
+                                <option value="Employer"/>
+                                <option value="School"/>
+                                <option value="Recruiting agency"/>
+                            </datalist>
+                            <input type="email" placeholder="Email address" required />
+                            <textarea placeholder="Enter your message here..."></textarea>
+                            <input class="button dark" type="submit" value="Request Info">
+                        </details>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <div class="footer__items__container">
+                <ul class="footer__connect">
+                    <h4>Connect</h4>
+                    <li>
+                        <div class="social__container">
+                            <a target="_blank" href="https://www.linkedin.com/in/chris-rinaldi/"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:crinaldi44@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a target="_blank" href="http://github.com/crinaldi44"><i class="fab fa-github"></i></a>
+                            <a href="assets/Chris_Rinaldi_Resume.pdf"><i class="fas fa-file"></i></a>
+                        </div>
+                    </li>
+                    <li><strong>Email: </strong> crinaldi44@gmail.com</li>
+                </ul>
+                <ul class="footer__assignments">
+                    <h4>Projects</h4>
+                    <li>Placeholder</li>
+                    <li>Placeholder 1</li>
+                    <li>Placeholder 2</li>
+                </ul>
+                <ul class="footer__links">
+                    <h4>Links</h4>
+                    <li>Elvis</li>
+                    <li>Rowan</li>
+                </ul>
+            </div>
+            <div class="footer__watermark">
+                Copyright ©2022 Chris Rinaldi
+            </div>
+        </footer>
+
+        <script>
+
+            /**
+             * Header typing effect!
+             * @type {HTMLElement}
+             */
+            const header = document.getElementById('header1')
+            const header2 = document.getElementById('header2')
+            const headerText = ['F', 'u', 'l', 'l','s','t','a','c','k',' ', 'D','e','v','e','l','o','p','e','r']
+            const header2Text = ['P','o','r','t','f','o','l','i','o']
+
+            let counter = 0;
+            let interval = setInterval(() => {
+                header.innerHTML = header.innerHTML.concat(headerText[counter])
+                counter++;
+                if (counter >= headerText.length) {
+                    clearInterval(interval)
+                    counter = 0;
+                    triggerHeader2()
+                }
+            }, 150)
+
+            /**
+             * Fires the typing effect for header #2 once the first has completed.
+             */
+            const triggerHeader2 = () => {
+                let interval = setInterval(() => {
+                    header2.innerHTML = header2.innerHTML.concat(header2Text[counter])
+                    counter++
+                    if (counter >= header2Text.length) {
+                        clearInterval(interval)
+                    }
+                }, 100)
+            }
+        </script>
+    </body>
+</html>
