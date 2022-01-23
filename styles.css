@@ -93,7 +93,8 @@ a {
 }
 
 .hero__bg__loop {
-    max-height: 200%;
+    /*max-height: 200%;*/
+    max-width: 200%;
     object-fit: contain;
     position: fixed;
     z-index:-2;
