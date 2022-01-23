@@ -94,17 +94,17 @@
                         <h1 class="contact__header">Get in touch with rapid response</h1>
                         <p class="contact__text">Please feel free to use the form below to get in touch! I generally will respond to any requests for more information or elaboration of work within 24 hours.</p>
                     </div>
-                    <form id="contact__form" method="post">
+                    <form name="contact" id="contact__form" method="post" data-netlify="true">
                         <details style="margin-top: 15px">
                             <summary><strong>Contact Form</strong></summary>
-                            <input list="types" placeholder="I am a..." required/>
+                            <input name="contactBy" list="types" placeholder="I am a..." required/>
                             <datalist id="types">
                                 <option value="Employer"/>
                                 <option value="School"/>
                                 <option value="Recruiting agency"/>
                             </datalist>
-                            <input type="email" placeholder="Email address" required />
-                            <textarea placeholder="Enter your message here..."></textarea>
+                            <input name="email" type="email" placeholder="Email address" required />
+                            <textarea name="message" placeholder="Enter your message here..."></textarea>
                             <input class="button dark" type="submit" value="Request Info">
                         </details>
                     </form>
