@@ -305,6 +305,7 @@ p.about__text__p {
 /* CONTACT SECTION */
 #contact {
     min-height: 750px;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: white;
