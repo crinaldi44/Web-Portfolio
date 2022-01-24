@@ -226,6 +226,23 @@ p.hero__text__subheader {
     border-radius: 7px;
 }
 
+.assignments__card a {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    background: linear-gradient(to right, darkorange 50%, var(--accent-color) 50%) text;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all ease-in-out 300ms;
+    font-weight: 600;
+}
+
+.assignments__card:hover a {
+    background-position: left bottom;
+    transition: all ease-in-out 300ms;
+}
+
 .assignments__card:hover {
     transform: scale(1.05);
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
