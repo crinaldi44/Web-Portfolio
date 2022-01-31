@@ -231,7 +231,7 @@ p.hero__text__subheader {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     color: transparent;
-    background: linear-gradient(to right, darkorange 50%, var(--accent-color) 50%) text;
+    background-image: linear-gradient(to right, darkorange 50%, var(--accent-color) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all ease-in-out 300ms;
